@@ -8,6 +8,20 @@ import {
   Typography,
   Card,
   CardBody,
+  Navbar,
+  Collapse,
+  IconButton,
+  Input,
 } from "@material-tailwind/react";
 
-export { ThemeProvider, Button, Typography, Card, CardBody };
+export {
+  ThemeProvider,
+  Button,
+  Typography,
+  Card,
+  CardBody,
+  Navbar,
+  Collapse,
+  IconButton,
+  Input,
+};
