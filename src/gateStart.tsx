@@ -12,6 +12,7 @@ import {
   Collapse,
   IconButton,
   Input,
+  Carousel,
 } from "@material-tailwind/react";
 
 export {
@@ -24,4 +25,5 @@ export {
   Collapse,
   IconButton,
   Input,
+  Carousel,
 };
