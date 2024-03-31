@@ -30,7 +30,7 @@ function NavItem({ children }: NavItemPropsType) {
         href="#"
         variant="paragraph"
         color="blue-gray"
-        className="text-white flex items-center gap-2 font-medium hover:text-purple-500"
+        className="text-white flex items-center gap-2 font-medium hover:text-purple500"
       >
         {children}
       </Typography>
@@ -71,10 +71,10 @@ function NavbarDefault() {
             <NavItem>Aplikasi</NavItem>
           </ul>
           <div className="hidden items-center gap-4 lg:flex">
-            <Button variant="text" color="purple">
+            <Button variant="text" className="text-purple500">
               Log in
             </Button>
-            <Button color="purple">Register</Button>
+            <Button className="bg-purple500">Register</Button>
           </div>
           <IconButton
             variant="text"
@@ -111,7 +111,7 @@ function NavbarDefault() {
             </ul>
             <div className="mt-6 mb-4 flex items-center gap-4">
               <Button variant="text">Log in</Button>
-              <Button color="gray">buy now</Button>
+              <Button color="gray">Register</Button>
             </div>
           </div>
         </Collapse>

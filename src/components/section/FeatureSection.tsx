@@ -31,7 +31,7 @@ export function FeatureSection() {
             />
             <Typography
               variant="h4"
-              className="mb-2 font-bold text-blackCustom1 mt-6"
+              className="mb-2 font-bold text-gray-800 mt-6"
             >
               POS Apotek
             </Typography>
@@ -40,7 +40,7 @@ export function FeatureSection() {
               academics, and seasoned professionals dedicated to helping you.
             </Typography>
             <div className="flex flex-row gap-4 align-middle mt-4 hover:gap-8 transition-gap">
-              <Typography variant="h6" className="font-bold text-grayCustom1">
+              <Typography variant="h6" className="font-bold text-gray-700">
                 Learn More
               </Typography>
               <Image
@@ -62,7 +62,7 @@ export function FeatureSection() {
             />
             <Typography
               variant="h4"
-              className="mb-2 font-bold text-blackCustom1 mt-6"
+              className="mb-2 font-bold text-gray-800 mt-6"
             >
               POS PBF
             </Typography>
@@ -71,7 +71,7 @@ export function FeatureSection() {
               academics, and seasoned professionals dedicated to helping you.
             </Typography>
             <div className="flex flex-row gap-4 align-middle mt-4 hover:gap-8 transition-gap">
-              <Typography variant="h6" className="font-bold text-grayCustom1">
+              <Typography variant="h6" className="font-bold text-gray-700">
                 Learn More
               </Typography>
               <Image
@@ -93,7 +93,7 @@ export function FeatureSection() {
             />
             <Typography
               variant="h4"
-              className="mb-2 font-bold text-blackCustom1 mt-6"
+              className="mb-2 font-bold text-gray-800 mt-6"
             >
               Farmaguru Medical
             </Typography>
@@ -102,7 +102,7 @@ export function FeatureSection() {
               academics, and seasoned professionals dedicated to helping you.
             </Typography>
             <div className="flex flex-row gap-4 align-middle mt-4 hover:gap-8 transition-gap">
-              <Typography variant="h6" className="font-bold text-grayCustom1">
+              <Typography variant="h6" className="font-bold text-gray-700">
                 Learn More
               </Typography>
               <Image
@@ -124,7 +124,7 @@ export function FeatureSection() {
             />
             <Typography
               variant="h4"
-              className="mb-2 font-bold text-blackCustom1 mt-6"
+              className="mb-2 font-bold text-gray-800 mt-6"
             >
               Kamus Obat
             </Typography>
@@ -133,7 +133,7 @@ export function FeatureSection() {
               academics, and seasoned professionals dedicated to helping you.
             </Typography>
             <div className="flex flex-row gap-4 align-middle mt-4 hover:gap-8 transition-gap">
-              <Typography variant="h6" className="font-bold text-grayCustom1">
+              <Typography variant="h6" className="font-bold text-gray-700">
                 Learn More
               </Typography>
               <Image
