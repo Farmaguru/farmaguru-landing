@@ -10,24 +10,19 @@ import {
   Typography,
   Input,
 } from "./../../gateStart";
-import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  Squares2X2Icon,
-} from "@heroicons/react/24/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 interface NavItemPropsType {
   children: React.ReactNode;
+  href: string;
 }
 
-function NavItem({ children }: NavItemPropsType) {
+function NavItem({ children, href }: NavItemPropsType) {
   return (
     <li>
       <Typography
         as="a"
-        href="#"
+        href={href}
         variant="paragraph"
         color="blue-gray"
         className="text-white flex items-center gap-2 font-medium hover:text-purple500"
@@ -65,10 +60,10 @@ function NavbarDefault() {
             height={"19"}
           />
           <ul className="ml-10 hidden items-center gap-10 lg:flex">
-            <NavItem>Home</NavItem>
+            <NavItem href="/">Home</NavItem>
             <NavItem>Kamus Obat</NavItem>
             <NavItem>Komunitas</NavItem>
-            <NavItem>Aplikasi</NavItem>
+            <NavItem href="/aplikasi">Aplikasi</NavItem>
           </ul>
           <div className="hidden items-center gap-4 lg:flex">
             <Button variant="text" className="text-purple500">
@@ -92,22 +87,10 @@ function NavbarDefault() {
         <Collapse open={open}>
           <div className="container mx-auto mt-3 border-t border-blue-gray-50 px-2 pt-4">
             <ul className="flex flex-col gap-4">
-              <NavItem>
-                <RectangleStackIcon className="h-5 w-5" />
-                Pages
-              </NavItem>
-              <NavItem>
-                <UserCircleIcon className="h-5 w-5" />
-                Account
-              </NavItem>
-              <NavItem>
-                <Squares2X2Icon className="h-5 w-5" />
-                Blocks
-              </NavItem>
-              <NavItem>
-                <CommandLineIcon className="h-5 w-5" />
-                Docs
-              </NavItem>
+              <NavItem href="/">Home</NavItem>
+              <NavItem>Kamus Obat</NavItem>
+              <NavItem>Komunitas</NavItem>
+              <NavItem href="/aplikasi">Aplikasi</NavItem>
             </ul>
             <div className="mt-6 mb-4 flex items-center gap-4">
               <Button variant="text">Log in</Button>

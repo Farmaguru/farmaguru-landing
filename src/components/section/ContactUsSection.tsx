@@ -4,7 +4,7 @@ import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/20/solid";
 export function ContactUsSection() {
   return (
     <section className="bg-green100">
-      <div className="mb-10 lg:mb-20 m-10 p-10 rounded-l-xl rounded-xl bg-no-repeat lg:bg-contain bg-cover bg-right text-center">
+      <div className="mb-10 lg:mb-20 p-10 rounded-l-xl rounded-xl bg-no-repeat lg:bg-contain bg-cover bg-right text-center">
         <Typography variant="h3" color="blue-gray">
           Hubungi Kami
         </Typography>
