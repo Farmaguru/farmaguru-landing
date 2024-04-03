@@ -14,7 +14,7 @@ function HeroDetailApplication() {
       <header className="bg-white p-8 lg:pt-20">
         <div className="grid mt-16 min-h-[82vh] w-full lg:h-[52rem] md:h-[34rem] place-items-stretch bg-[url('/assets/circles.svg')] bg-center bg-contain bg-no-repeat">
           <div className="container mx-auto px-4 text-center">
-            <Typography className="inline-flex text-xs rounded-lg border-[1.5px] border-blue-gray-50 bg-white py-1 lg:px-4 px-1 font-medium text-primary">
+            <Typography className="inline-flex text-xs rounded-lg border-[1.5px] border-blue-gray-50 bg-white py-1 px-4 font-medium text-primary">
               Aplikasi Farmaguru, Sistem One-Stop Farmasi
             </Typography>
             <Typography

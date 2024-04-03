@@ -4,15 +4,32 @@ import { Typography } from "./../../gateStart";
 const LINKS = [
   {
     title: "Home",
-    items: ["Tentang Farmaguru", "Aktivitas Kami", "Hubungi Kami"],
+    url: "/",
+    items: [
+      { display: "Tentang Farmaguru", url: "" },
+      { display: "Aktivitas Kami", url: "" },
+      { display: "Hubungi Kami", url: "" },
+    ],
   },
   {
-    title: "Company",
-    items: ["About us", "Careers", "Press", "News"],
+    title: "Kamus Obat",
+    url: "/",
+    items: [],
   },
   {
-    title: "Resource",
-    items: ["Blog", "Newsletter", "Events", "Help center"],
+    title: "Komunitas",
+    url: "/",
+    items: [],
+  },
+  {
+    title: "Aplikasi",
+    url: "/aplikasi",
+    items: [
+      { display: "POS Apotek", url: "/aplikasi/apotek" },
+      { display: "PBF", url: "" },
+      { display: "Lorem Ipsum", url: "" },
+      { display: "Dolor Sit", url: "" },
+    ],
   },
 ];
 
@@ -40,24 +57,25 @@ export function FooterHomepage() {
           </div>
 
           <div className="grid grid-cols-4 justify-between gap-4">
-            {LINKS.map(({ title, items }) => (
+            {LINKS.map(({ title, items, url }) => (
               <ul key={title}>
                 <Typography
                   variant="small"
                   color="blue-gray"
                   className="mb-3 font-medium opacity-40"
+                  href={url}
                 >
                   {title}
                 </Typography>
-                {items.map((link) => (
-                  <li key={link}>
+                {items.map((link, index) => (
+                  <li key={index}>
                     <Typography
                       as="a"
-                      href="#"
+                      href={link.url}
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
-                      {link}
+                      {link.display}
                     </Typography>
                   </li>
                 ))}
