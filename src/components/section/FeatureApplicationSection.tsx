@@ -6,28 +6,98 @@ import {
 import { Typography, Card, CardBody, Button } from "./../../gateStart";
 import Image from "next/image";
 
+interface FeatureApplicationProps {
+  application: "posapotek" | "pbf" | "kamusobat" | "medical";
+}
+
 const features = [
   {
-    name: "Kamus Obat.",
-    description:
-      "Creativity starts with an empty calendar and ends with a full one.",
-    icon: CloudArrowUpIcon,
+    applicationId: "posapotek",
+    applicationName: "POS Apotek",
+    applicationDescription:
+      "Rasakan langsung manfaat dari menggunakan POS Apotek secara langsung dengan mencoba langganan gratis selama satu bulan!",
+    featureDetail: [
+      {
+        name: "Manajemen Stok",
+        description:
+          "Pantau persediaan obat Anda secara real-time kapan saja, dari mana saja.",
+        icon: CloudArrowUpIcon,
+      },
+      {
+        name: "Sistem Terintegrasi.",
+        description:
+          "Proses transaksi penjualan dengan cepat dan mudah menggunakan sistem POS yang intuitif.",
+        icon: LockClosedIcon,
+      },
+      {
+        name: "Laporan dan Analisis.",
+        description:
+          "Hasilkan berbagai laporan penting, seperti laporan laba rugi, laporan stok, laporan penjualan, dan laporan resep.",
+        icon: ServerIcon,
+      },
+    ],
   },
   {
-    name: "Komunitas.",
-    description:
-      "Creativity starts with an empty calendar and ends with a full one.",
-    icon: LockClosedIcon,
+    applicationId: "pospbf",
+    applicationName: "POS PBF",
+    applicationDescription:
+      "Rasakan langsung manfaat dari menggunakan POS PBF secara langsung dengan mencoba langganan gratis selama satu bulan!",
+    featureDetail: [
+      {
+        name: "Manajemen Stok",
+        description:
+          "Pantau persediaan obat Anda secara real-time kapan saja, dari mana saja.",
+        icon: CloudArrowUpIcon,
+      },
+      {
+        name: "Sistem Terintegrasi.",
+        description:
+          "Proses transaksi penjualan dengan cepat dan mudah menggunakan sistem POS yang intuitif.",
+        icon: LockClosedIcon,
+      },
+      {
+        name: "Laporan dan Analisis.",
+        description:
+          "Hasilkan berbagai laporan penting, seperti laporan laba rugi, laporan stok, laporan penjualan, dan laporan resep.",
+        icon: ServerIcon,
+      },
+    ],
   },
   {
-    name: "Aplikasi.",
-    description:
-      "Creativity starts with an empty calendar and ends with a full one.",
-    icon: ServerIcon,
+    applicationId: "kamusobat",
+    applicationName: "Kamus Obat",
+    applicationDescription:
+      "Rasakan langsung manfaat dari menggunakan Kamus Obat secara langsung dengan mencoba langganan gratis selama satu bulan!",
+    featureDetail: [
+      {
+        name: "Informasi Lengkap",
+        description:
+          "Kamus obat menyediakan informasi lengkap dan terpercaya terkait obat-obar yang beredar di Indonesia",
+        icon: CloudArrowUpIcon,
+      },
+      {
+        name: "Komitmen Update.",
+        description:
+          "Kami berencana terus melakukan update sesuai dengan data kementrian sebagai bentuk partisipasi dari program Indonesia Satu Data",
+        icon: LockClosedIcon,
+      },
+      {
+        name: "Cepat dan Andal.",
+        description:
+          "Temukan data obat yang dibutuhkan cepat dalam hitungan detik!",
+        icon: ServerIcon,
+      },
+    ],
   },
 ];
 
-export default function FeatureApplicationSection() {
+export default function FeatureApplicationSection({
+  application,
+}: FeatureApplicationProps) {
+  let filteredFeature = features.filter(
+    (feature) => feature.applicationId === application
+  );
+
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -48,8 +118,7 @@ export default function FeatureApplicationSection() {
                 Coba Gratis!
               </Typography>
               <Typography className="mb-4 max-w-md text-base font-normal leading-7 !text-gray-500 px-6">
-                Rasakan langsung manfaat dari menggunakan POS Apotek secara
-                langsung dengan mencoba langganan gratis selama satu bulan!
+                {filteredFeature[0].applicationName}
               </Typography>
               <Button size="md" className="bg-green500 text-white mb-4">
                 Coba Sekarang!
@@ -62,16 +131,17 @@ export default function FeatureApplicationSection() {
                 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
                 style={{ lineHeight: "130%" }}
               >
-                Fitur Unggulan <span className="text-green500">POS Apotek</span>
+                Fitur Unggulan{" "}
+                <span className="text-green500">
+                  {filteredFeature[0].applicationName}
+                </span>
               </Typography>
               <Typography className="mt-6 text-lg leading-8 font-normal text-gray-600">
-                Say goodbye to confusion of picking a best costume to attend
-                some events! Our collection ensure you find the perfect costume
-                that suits your needs.
+                {filteredFeature[0].applicationDescription}
               </Typography>
 
               <div className="mt-10 text-base leading-7 text-gray-600 grid grid-cols-1 lg:grid-cols-6 gap-6">
-                {features.map((feature) => (
+                {filteredFeature[0].featureDetail.map((feature) => (
                   <div key={feature.name} className="col-span-2">
                     <feature.icon
                       className="h-8 w-8 text-indigo-600 mb-2"

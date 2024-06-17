@@ -8,13 +8,14 @@ import TestimonialSection from "@/components/section/TestimonialSection";
 import HeroDetailApplication from "@/components/hero/HeroDetailApplication";
 import PricingSection from "@/components/section/PricingSection";
 import FeatureApplicationSection from "@/components/section/FeatureApplicationSection";
+import AboutApplicationSection from "@/components/section/AboutApplicationSection";
 
 export default function Home() {
   return (
     <>
       <HeroDetailApplication />
-      <WhatFarmaguruSection />
-      <FeatureApplicationSection />
+      <AboutApplicationSection application="posapotek" />
+      <FeatureApplicationSection application="posapotek" />
       <PricingSection />
       <ContactUsSection />
       <FooterHomepage />
