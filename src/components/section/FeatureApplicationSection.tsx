@@ -1,7 +1,11 @@
 import {
   CloudArrowUpIcon,
   LockClosedIcon,
-  ServerIcon,
+  ClipboardDocumentCheckIcon,
+  DocumentTextIcon,
+  DocumentCheckIcon,
+  ArrowPathIcon,
+  BoltIcon,
 } from "@heroicons/react/20/solid";
 import { Typography, Card, CardBody, Button } from "./../../gateStart";
 import Image from "next/image";
@@ -21,24 +25,24 @@ const features = [
         name: "Manajemen Stok",
         description:
           "Pantau persediaan obat Anda secara real-time kapan saja, dari mana saja.",
-        icon: CloudArrowUpIcon,
+        icon: DocumentTextIcon,
       },
       {
         name: "Sistem Terintegrasi.",
         description:
           "Proses transaksi penjualan dengan cepat dan mudah menggunakan sistem POS yang intuitif.",
-        icon: LockClosedIcon,
+        icon: CloudArrowUpIcon,
       },
       {
         name: "Laporan dan Analisis.",
         description:
           "Hasilkan berbagai laporan penting, seperti laporan laba rugi, laporan stok, laporan penjualan, dan laporan resep.",
-        icon: ServerIcon,
+        icon: ClipboardDocumentCheckIcon,
       },
     ],
   },
   {
-    applicationId: "pospbf",
+    applicationId: "pbf",
     applicationName: "POS PBF",
     applicationDescription:
       "Rasakan langsung manfaat dari menggunakan POS PBF secara langsung dengan mencoba langganan gratis selama satu bulan!",
@@ -47,19 +51,19 @@ const features = [
         name: "Manajemen Stok",
         description:
           "Pantau persediaan obat Anda secara real-time kapan saja, dari mana saja.",
-        icon: CloudArrowUpIcon,
+        icon: DocumentTextIcon,
       },
       {
         name: "Sistem Terintegrasi.",
         description:
           "Proses transaksi penjualan dengan cepat dan mudah menggunakan sistem POS yang intuitif.",
-        icon: LockClosedIcon,
+        icon: CloudArrowUpIcon,
       },
       {
         name: "Laporan dan Analisis.",
         description:
           "Hasilkan berbagai laporan penting, seperti laporan laba rugi, laporan stok, laporan penjualan, dan laporan resep.",
-        icon: ServerIcon,
+        icon: ClipboardDocumentCheckIcon,
       },
     ],
   },
@@ -73,19 +77,45 @@ const features = [
         name: "Informasi Lengkap",
         description:
           "Kamus obat menyediakan informasi lengkap dan terpercaya terkait obat-obar yang beredar di Indonesia",
-        icon: CloudArrowUpIcon,
+        icon: DocumentCheckIcon,
       },
       {
         name: "Komitmen Update.",
         description:
           "Kami berencana terus melakukan update sesuai dengan data kementrian sebagai bentuk partisipasi dari program Indonesia Satu Data",
-        icon: LockClosedIcon,
+        icon: ArrowPathIcon,
       },
       {
         name: "Cepat dan Andal.",
         description:
           "Temukan data obat yang dibutuhkan cepat dalam hitungan detik!",
-        icon: ServerIcon,
+        icon: BoltIcon,
+      },
+    ],
+  },
+  {
+    applicationId: "medical",
+    applicationName: "Farmaguru Medical",
+    applicationDescription:
+      "Rasakan langsung manfaat dari menggunakan Farmaguru Medical secara langsung dengan mencoba langganan gratis selama satu bulan!",
+    featureDetail: [
+      {
+        name: "Pencatatan Lengkap",
+        description:
+          "Buat dan kelola rekam medis pasien secara komprehensif, termasuk riwayat kesehatan, diagnosis, alergi, obat-obatan, dan hasil pemeriksaan.",
+        icon: DocumentCheckIcon,
+      },
+      {
+        name: "Mudah dan Aman",
+        description:
+          "Akses rekam medis pasien kapan saja, dari mana saja, dengan koneksi internet. Data pasien dilindungi dengan enkripsi tingkat tinggi untuk memastikan keamanan dan privasi.",
+        icon: LockClosedIcon,
+      },
+      {
+        name: "Riwayat Kesehatan",
+        description:
+          "Pantau riwayat kesehatan pasien dengan mudah untuk memberikan diagnosis dan pengobatan yang tepat.",
+        icon: ClipboardDocumentCheckIcon,
       },
     ],
   },

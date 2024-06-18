@@ -10,28 +10,28 @@ export function FeatureSection() {
       imageSrc: "farma-apotek",
       linkHref: "apotek",
       detail:
-        "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
+        "Merupakan aplikasi yang bekerja layaknya digital yang membantu mencatat transaksi obat dan menyajikan berbagai laporan penting untuk analisis bisnis.",
     },
     {
       name: "POS PBF",
       imageSrc: "farma-supply",
       linkHref: "pbf",
       detail:
-        "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
+        "Merupakan aplikasi yang bekerja untuk mengatur stok dan melakukan pemesanan stok obat. Dalam aplikasi ini juga terdapat fitur laporan seperti pada POS Apotek",
     },
     {
       name: "Farmaguru Medical",
       imageSrc: "farma-medical",
       linkHref: "medical",
       detail:
-        "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
+        "Farmaguru Medical merupakan aplikasi  yang dirancang untuk mencatat dan mengelola rekam medis pasien agar dapat memberikan layanan kesehatan yang optimal.",
     },
     {
       name: "Kamus Obat",
       imageSrc: "farma-edu",
       linkHref: "kamusobat",
       detail:
-        "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
+        "Kami memiliki kamus obat yang lengkap dan telah tersinkronisasi dengan Satu Sehat dari Kemkes sebagai bentuk program Indonesia Satu Data!",
     },
   ];
 

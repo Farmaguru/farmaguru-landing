@@ -8,9 +8,9 @@ import AboutApplicationSection from "@/components/section/AboutApplicationSectio
 export default function Home() {
   return (
     <>
-      <HeroDetailApplication application="posapotek" />
-      <AboutApplicationSection application="posapotek" />
-      <FeatureApplicationSection application="posapotek" />
+      <HeroDetailApplication application="medical" />
+      <AboutApplicationSection application="medical" />
+      <FeatureApplicationSection application="medical" />
       <PricingSection />
       <ContactUsSection />
       <FooterHomepage />

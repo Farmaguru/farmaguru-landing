@@ -4,7 +4,44 @@ import Image from "next/image";
 import NavbarDefault from "../navbar/NavbarDefault";
 import { Carousel, Typography, Button } from "./../../gateStart";
 
-function HeroDetailApplication() {
+interface HeroDetailApplicationProps {
+  application: "posapotek" | "pbf" | "kamusobat" | "medical";
+}
+
+const applicationLists = [
+  {
+    applicationId: "posapotek",
+    applicationName: "POS Apotek",
+    applicationDescription:
+      "Permudah pencatatan transaksi Anda dengan POS Apotek!",
+    imageHref: "/images/carousel/apotek.png",
+  },
+  {
+    applicationId: "pbf",
+    applicationName: "POS PBF",
+    applicationDescription: "Pembelian stok obat kini mudah dengan POS PBF!",
+    imageHref: "/images/carousel/apotek.png",
+  },
+  {
+    applicationId: "kamusobat",
+    applicationName: "Kamus Obat",
+    applicationDescription:
+      "Temukan data obat di Kamus Obat terintegrasi Satu Sehat!",
+    imageHref: "/images/carousel/apotek.png",
+  },
+  {
+    applicationId: "medical",
+    applicationName: "Farmaguru Medical",
+    applicationDescription:
+      "Kelola rekam medis secara komperhensif dengan Farmaguru Medical!",
+    imageHref: "/images/carousel/apotek.png",
+  },
+];
+
+function HeroDetailApplication({ application }: HeroDetailApplicationProps) {
+  let filteredApplication = applicationLists.filter(
+    (app) => app.applicationId === application
+  );
   return (
     <>
       <div className="absolute inset-x-0 top-0 z-50">
@@ -23,7 +60,9 @@ function HeroDetailApplication() {
               className="mx-auto my-6 w-full leading-snug  !text-2xl lg:max-w-3xl lg:!text-5xl"
             >
               Memperkenalkan{" "}
-              <span className="text-green-500 leading-snug ">POS Apotek</span>{" "}
+              <span className="text-green-500 leading-snug ">
+                {filteredApplication[0].applicationName}
+              </span>{" "}
               apikasi untuk usaha{" "}
               <span className="leading-snug text-green-500">Farmasi</span> Anda.
             </Typography>
@@ -31,8 +70,7 @@ function HeroDetailApplication() {
               variant="lead"
               className="mx-auto w-full !text-gray-500 lg:text-lg text-base mb-8"
             >
-              The time is now for it to be okay to be great. For being a bright
-              color. For standing out.
+              {filteredApplication[0].applicationDescription}
             </Typography>
             <div className="flex justify-center gap-4 mb-8">
               <Button size="lg" className="bg-purple500 text-white">
@@ -48,7 +86,7 @@ function HeroDetailApplication() {
             </div>
             <Image
               className="inline"
-              src={"/images/carousel/apotek.png"}
+              src={filteredApplication[0].imageHref}
               height={2000}
               width={1000}
               alt="posapotek"

@@ -5,25 +5,25 @@ import { Typography, Card, CardBody } from "./../../gateStart";
 export function TestimonialSection() {
   const testimonials = [
     {
-      name: "Liliayuna",
-      occupation: "Co CEO Tokisaki Holding Group",
+      name: "John Doe",
+      occupation: "Co CEO Apotek Sinar Dunia",
       message:
-        "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
-      profileSrc: "testi1.jpg",
+        "Aplikasi ini sangat mempermudah bisnis saya, senang dapat mengenal Farmaguru",
+      profileSrc: "testi1.png",
     },
     {
-      name: "Xiaoyukiko",
-      occupation: "CEO Tokisaki Cosplay",
+      name: "Jane Poe",
+      occupation: "Manager Apotek Cahaya Dunia",
       message:
-        "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
-      profileSrc: "testi1.jpg",
+        "Dengan Farmaguru, semua pekerjaan dan pelaporan di apotek saya menjadi lebih rapi dan terstruktur.",
+      profileSrc: "testi1.png",
     },
     {
-      name: "Akari Akase",
-      occupation: "Voice Actress",
+      name: "Cahyadi Nanda",
+      occupation: "Pegawai Apotek",
       message:
-        "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
-      profileSrc: "testi1.jpg",
+        "Aplikasinya mudah digunakan, tidak perlu ribet untuk menangani transaksi karena sudah tersedia banyak fitur!",
+      profileSrc: "testi1.png",
     },
   ];
 

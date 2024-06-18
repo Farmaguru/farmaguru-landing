@@ -45,9 +45,9 @@ export default function WhatFarmaguruSection() {
                 </span>
               </Typography>
               <Typography className="mt-6 text-lg leading-8 font-normal text-gray-600">
-                Say goodbye to confusion of picking a best costume to attend
-                some events! Our collection ensure you find the perfect costume
-                that suits your needs.
+                Kami adalah komunitas serta penyedia layanan aplikasi yang
+                bergerak di bidang Kefarmasian. Berikut adalah layanan yang kami
+                tawarkan:
               </Typography>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (

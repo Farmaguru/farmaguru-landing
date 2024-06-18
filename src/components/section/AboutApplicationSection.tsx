@@ -18,8 +18,8 @@ const datas = [
       "Aplikasi POS Apotek, atau Point of Sale for Pharmacy, adalah sebuah perangkat lunak yang dirancang khusus untuk membantu pengelolaan apotek. Aplikasi ini bekerja layaknya kasir digital yang membantu mencatat transaksi penjualan obat, mengelola stok barang, dan menyajikan berbagai laporan penting untuk analisis bisnis.",
   },
   {
-    applicationId: "pospbf",
-    applicationName: "Pos PBF",
+    applicationId: "pbf",
+    applicationName: "POS PBF",
     applicationDescription:
       "Aplikasi POS PBF,  adalah sebuah perangkat lunak yang dirancang khusus untuk membantu pemesanan stok obat. Aplikasi ini bekerja layaknya kasir digital yang membantu mencatat transaksi penjualan obat, mengelola pembelian stok barang dan menyajikan berbagai laporan penting untuk analisis bisnis.",
   },
@@ -28,6 +28,12 @@ const datas = [
     applicationName: "Kamus Obat",
     applicationDescription:
       "Aplikasi kamus obat merupakan aplikasi seperti layaknya kamus yang ditujukan untuk obat. Dalam aplikasi ini terdapat data-data detail terkait obat-obatan yang beredar di Indonesia",
+  },
+  {
+    applicationId: "medical",
+    applicationName: "Farmaguru Medical",
+    applicationDescription:
+      "Farmaguru Medical merupakan aplikasi yang dirancang khusus untuk mencatat dan mengelola rekam medis pasien dengan mudah dan aman. Aplikasi ini dilengkapi dengan berbagai fitur canggih yang membantu dokter, perawat, dan tenaga medis lainnya dalam memberikan layanan kesehatan yang optimal.",
   },
 ];
 
