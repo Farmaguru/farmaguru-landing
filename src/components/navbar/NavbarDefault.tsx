@@ -88,10 +88,14 @@ function NavbarDefault({ theme }: NavbarProps) {
             </NavItem>
           </ul>
           <div className="hidden items-center gap-4 lg:flex">
-            <Button variant="text" className="text-purple500">
-              Log in
-            </Button>
-            <Button className="bg-purple500">Register</Button>
+            <a href="/login">
+              <Button variant="text" className="text-purple500">
+                Log in
+              </Button>
+            </a>
+            <a href="/register">
+              <Button className="bg-purple500">Register</Button>
+            </a>
           </div>
           <IconButton
             variant="text"
@@ -126,8 +130,12 @@ function NavbarDefault({ theme }: NavbarProps) {
               </NavItem>
             </ul>
             <div className="mt-6 mb-4 flex items-center gap-4">
-              <Button variant="text">Log in</Button>
-              <Button color="gray">Register</Button>
+              <a href="/login">
+                <Button variant="text">Log in</Button>
+              </a>
+              <a href="/register">
+                <Button color="gray">Register</Button>
+              </a>
             </div>
           </div>
         </Collapse>
