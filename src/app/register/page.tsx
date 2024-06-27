@@ -128,7 +128,7 @@ export default function Login() {
                   />
                 </div>
                 <Button color="gray" size="lg" className="mt-16" fullWidth>
-                  Log In
+                  Register
                 </Button>
 
                 <Typography

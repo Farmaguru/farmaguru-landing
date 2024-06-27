@@ -2,6 +2,9 @@ import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
+  BookOpenIcon,
+  UserGroupIcon,
+  ComputerDesktopIcon,
 } from "@heroicons/react/20/solid";
 import { Typography, Card, CardBody } from "./../../gateStart";
 import Image from "next/image";
@@ -11,19 +14,19 @@ const features = [
     name: "Kamus Obat.",
     description:
       "Kami memiliki kamus obat yang lengkap dan telah tersinkronisasi dengan Satu Sehat dari Kemkes sebagai bentuk program Indonesia Satu Data!",
-    icon: CloudArrowUpIcon,
+    icon: BookOpenIcon,
   },
   {
     name: "Komunitas.",
     description:
       "Merasa bingung? Komunitas Farmaguru siap membantu untuk menemukan berbagai kemungkinan solusi untuk masalah kesehatan dan kefarmasian Anda!",
-    icon: LockClosedIcon,
+    icon: UserGroupIcon,
   },
   {
     name: "Aplikasi.",
     description:
       "Butuh aplikasi penunjang untuk usaha kefarmasian Anda? Aplikasi Farmaguru Solusinya! Kami memiliki aplikasi yang lengkap dan andal!",
-    icon: ServerIcon,
+    icon: ComputerDesktopIcon,
   },
 ];
 
