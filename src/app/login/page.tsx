@@ -21,43 +21,29 @@ export default function Login() {
                   Isi data di bawah untuk melanjutkan!
                 </Typography>
                 <div className="mb-6">
-                  <label htmlFor="email">
-                    <Typography
-                      variant="small"
-                      className="mb-2 block font-medium text-gray-900"
-                    >
-                      Your Email
-                    </Typography>
-                  </label>
                   <Input
                     id="email"
                     color="gray"
                     size="lg"
                     type="email"
                     name="email"
-                    placeholder="name@mail.com"
-                    className="w-full placeholder:opacity-100 focus:border-t-primary border-t-blue-gray-200"
-                    labelProps={{
-                      className: "hidden",
-                    }}
+                    label="Email"
+                    // placeholder="name@mail.com"
+                    className="w-full focus:border-t-primary border-t-blue-gray-200"
+                    // labelProps={{
+                    //   className: "hidden",
+                    // }}
                   />
                 </div>
                 <div className="mb-6">
-                  <label htmlFor="password">
-                    <Typography
-                      variant="small"
-                      className="mb-2 block font-medium text-gray-900"
-                    >
-                      Password
-                    </Typography>
-                  </label>
                   <Input
                     size="lg"
-                    placeholder="********"
-                    labelProps={{
-                      className: "hidden",
-                    }}
-                    className="w-full placeholder:opacity-100 focus:border-t-primary border-t-blue-gray-200"
+                    label="Password"
+                    // placeholder="********"
+                    // labelProps={{
+                    //   className: "hidden",
+                    // }}
+                    className="w-full placeholder:opacity-100 focus:border-gray-900 border-t-blue-gray-200"
                     type={passwordShown ? "text" : "password"}
                     icon={
                       <i onClick={togglePasswordVisiblity}>
@@ -70,7 +56,7 @@ export default function Login() {
                     }
                   />
                 </div>
-                <Button color="gray" size="lg" className="mt-6" fullWidth>
+                <Button size="lg" className="mt-6 bg-purple500" fullWidth>
                   Log In
                 </Button>
                 <div className="!mt-4 flex justify-end">
@@ -103,7 +89,7 @@ export default function Login() {
                   className="!mt-4 text-center font-normal"
                 >
                   Belum punya akun?{" "}
-                  <a href="#" className="font-medium text-gray-900">
+                  <a href="#" className="font-bold text-purple500">
                     Register
                   </a>
                 </Typography>
