@@ -1,0 +1,6 @@
+services:
+  frontend:
+    image: ghcr.io/farmaguru/farmaguru-landing:latest
+    restart: always
+    ports:
+      - 3004:3000
