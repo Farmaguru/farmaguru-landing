@@ -74,10 +74,10 @@ function NavbarDefault({ theme }: NavbarProps) {
             <NavItem theme={theme === "light" ? "light" : "dark"} href="/">
               Home
             </NavItem>
-            <NavItem theme={theme === "light" ? "light" : "dark"}>
+            <NavItem href="" theme={theme === "light" ? "light" : "dark"}>
               Kamus Obat
             </NavItem>
-            <NavItem theme={theme === "light" ? "light" : "dark"}>
+            <NavItem href="" theme={theme === "light" ? "light" : "dark"}>
               Komunitas
             </NavItem>
             <NavItem
@@ -116,10 +116,10 @@ function NavbarDefault({ theme }: NavbarProps) {
               <NavItem theme={theme === "light" ? "light" : "dark"} href="/">
                 Home
               </NavItem>
-              <NavItem theme={theme === "light" ? "light" : "dark"}>
+              <NavItem href="" theme={theme === "light" ? "light" : "dark"}>
                 Kamus Obat
               </NavItem>
-              <NavItem theme={theme === "light" ? "light" : "dark"}>
+              <NavItem href="" theme={theme === "light" ? "light" : "dark"}>
                 Komunitas
               </NavItem>
               <NavItem

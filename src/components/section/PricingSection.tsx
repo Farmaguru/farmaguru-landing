@@ -19,8 +19,8 @@ interface PricingCardPropsType {
     icon: React.ReactNode;
     info: string;
   }[];
-  icon: React.ReactNode;
-  children: React.ReactNode;
+  // icon: React.ReactNode;
+  // children: React.ReactNode;
 }
 
 function PricingCard({ title, desc, price, options }: PricingCardPropsType) {
