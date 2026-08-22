@@ -3,4 +3,4 @@ services:
     image: ghcr.io/farmaguru/farmaguru-landing:latest
     restart: always
     ports:
-      - 3004:3000
+      - 127.0.0.1:3004:3000
